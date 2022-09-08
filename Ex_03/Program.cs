@@ -24,7 +24,6 @@ double DifferencMaxMin(double[] mas)
     {
         if (min > mas[j]) min = mas[j];
     }
-    if (min < 0) min = min * (-1);
 
     return result = max - min;
 }

@@ -4,9 +4,9 @@
 
 // [-4, -6, 89, 6] -> 0
 
-int[] RandomMas()
+int[] RandomMas(int value)
 {
-    int[] mas = new int[6];
+    int[] mas = new int[value];
     for (int i = 0; i < mas.Length; i++)
     {
         mas[i] = new Random().Next(-1000, 1001);
@@ -32,7 +32,7 @@ void PrintRandomMas(int[] mas)
     }
 }
 
-int[] desiredArray = RandomMas();
+int[] desiredArray = RandomMas(6);
 PrintRandomMas(desiredArray);
 Console.WriteLine();
 Console.WriteLine($"Сумма элементов стоящих на нечетных позициях = {SumOdd(desiredArray)}");
